@@ -1,0 +1,30 @@
+site_name: Cogito Ergo Sum
+theme:
+  icon:
+    logo: material/brain
+  name: material
+  language: en
+  features:
+      - navigation.tabs
+
+markdown_extensions:
+  - footnotes
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
+nav:
+  - Home: 
+    - Introduction: index.md
+    - About Me: about.md
+
+
+  - Django Framework: 
+    - Introduction: django/0/index.md
+    - 1 - Installation: django/1/index.md
+    - 2 - Simple Page: django/2/index.md
+    - 3 - Create App: django/3/index.md
+  - Django Rest Framework: django/None
+  - Django Microservices: django/None
